@@ -1,0 +1,73 @@
+/**
+ * Name Selector
+ */
+h1{
+    color: brown;
+    text-align: right; /* left right center */
+    width: 100px;  /*50% */
+    height: 100px;
+    text-decoration: underline;
+}
+
+p{
+    
+}
+
+/**
+ * ID Selector #
+ */
+#title{
+    color: blueviolet;
+}
+
+/** Class Selector . */
+.text-italic{
+font-style: italic;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+p.text-italic{
+  font-weight: bold;  
+}
+
+
+.text-italic.text-underline{
+ color: rgba(203, 182, 21, 0.894);
+}
+
+.boys{
+
+}
+
+.girls{
+
+}
+
+
+
+.boys.girls{
+
+}
+
+
+#header h2, #content h2{
+    font-size: 50px;
+}
+
+#content h2{
+    color: pink;
+}
+
+/**Grouping Selectory - using comma */
+
+#header h1, #content h2, #footer h3{
+    color: green;
+}
+
+.boys, .girls{
+
+}
+
