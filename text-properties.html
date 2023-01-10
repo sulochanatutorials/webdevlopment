@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEXT Properties</title>
+  </head>
+  <body>
+    <style>
+      .page {
+        border: 1px solid gray;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 100px;
+        background-color: rgb(135, 135, 80);
+        color: white;
+
+        /* Text Formatting */
+        text-align: center;
+        text-align-last: right;
+      }
+    </style>
+    <div class="page">
+      <h1 style="text-decoration-line: underline; text-decoration-color: red">
+        Text Properties
+      </h1>
+      <h1 style="text-decoration-line: overline; text-decoration-color: red">
+        Text Properties
+      </h1>
+      <h1
+        style="text-decoration-line: line-through; text-decoration-color: red"
+      >
+        Text Properties
+      </h1>
+      <h1
+        style="
+          text-decoration-line: overline line-through underline;
+          text-decoration-color: rgb(128, 0, 255);
+          text-decoration-style: double;
+          text-decoration-thickness: 1px;
+        "
+      >
+        Text Properties
+      </h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et praesentium
+        similique voluptates voluptatem natus odit neque quae cum quibusdam
+        consequatur, nobis beatae iste unde aspernatur sed officiis - Mahatma
+        Gandhi.
+      </p>
+
+      <p style="direction: rtl; unicode-bidi: bidi-override">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et praesentium
+        similique voluptates voluptatem natus odit neque quae cum quibusdam
+        consequatur, nobis beatae iste unde aspernatur sed officiis possimus,
+        ipsam velit.
+      </p>
+
+      <a href="https://google.com" style="color: white; text-decoration: none"
+        >CLick to serach</a
+      >
+
+      <h2 style="text-transform: uppercase">uppercase</h2>
+      <h2 style="text-transform: lowercase">LOWERCASE</h2>
+      <h2 style="text-transform: capitalize">caPiatlise the wOrld</h2>
+    </div>
+  </body>
+</html>
