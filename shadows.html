@@ -6,5 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shadow In CSS</title>
   </head>
-  <body></body>
+  <body>
+    <h1>PROSKILL COMPUTERS</h1>
+
+    <div class="box"></div>
+
+    <style>
+      h1 {
+        color: white;
+        font-size: 250px;
+        text-shadow: 10px 10px 20px black;
+      }
+
+      .box {
+        border: 1px solid lightgray;
+        height: 200px;
+        width: 300px;
+        margin-bottom: 200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        -webkit-box-shadow: 48px 3px 78px 64px rgba(245, 10, 49, 1);
+        -moz-box-shadow: 48px 3px 78px 64px rgba(245, 10, 49, 1);
+        box-shadow: 48px 3px 78px 64px rgba(245, 10, 49, 1);
+      }
+    </style>
+  </body>
 </html>
