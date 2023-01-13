@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selectors</title>
+  </head>
+  <body>
+    <h2>Combinator Selector</h2>
+    <ol>
+      <li>Descendant Selector(div p)</li>
+      <li>Child selecto(>)</li>
+      <li>Adjacent Sibling Selector (+)</li>
+      <li>General Sibling Selector (~)</li>
+    </ol>
+
+    <style>
+      div#parent p {
+        color: greenyellow;
+      }
+    </style>
+
+    <div id="parent">
+      <h4>Lorem ipsum, dolor sit amet consectetur</h4>
+      <div class="para">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum illum
+          quae officia maiores quaerat esse eaque consectetur quam facilis
+          exercitationem commodi hic quidem ea provident obcaecati eum veniam,
+          qui quas?
+        </p>
+      </div>
+    </div>
+
+    <style>
+      div#desc > p {
+        color: red;
+      }
+    </style>
+    <div id="desc">
+      <!--
+            Father -> Son -> Grand Son
+         -->
+      <h4>Lorem ipsum, dolor sit amet consectetur</h4>
+      <p class="child">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+        inventore tempore voluptates, omnis dolores ea illo ratione recusandae
+        voluptatibus ipsam numquam quis aspernatur assumenda sed excepturi
+        libero, sit, atque minima!
+      </p>
+      <div class="para">
+        <p class="sub-child">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum illum
+          quae officia maiores quaerat esse eaque consectetur quam facilis
+          exercitationem commodi hic quidem ea provident obcaecati eum veniam,
+          qui quas?
+        </p>
+      </div>
+    </div>
+
+    <style>
+      #home-1 ~ p {
+        background-color: yellow;
+      }
+    </style>
+
+    <div id="home-1">
+      Home 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+      eligendi alias consequuntur temporibus cupiditate ducimus dolore! Mollitia
+      cum asperiores quo voluptates sed distinctio unde qui, impedit, error ut,
+      velit vel.
+    </div>
+
+    <p id="home-2">This is Home 2</p>
+
+    <p id="home-3">Home 3 and Test</p>
+  </body>
+</html>
