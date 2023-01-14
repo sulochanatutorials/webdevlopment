@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+  </head>
+  <body>
+    <style>
+      /*
+        textarea
+        text,email,number,date
+        */
+      form input[type="text"],
+      form textarea,
+      form select {
+        width: 200px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      form input[type="checkbox"] {
+        margin-bottom: 10px;
+      }
+
+      form fieldset legend h4 {
+        color: red;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 1.5em;
+      }
+    </style>
+    <div id="content">
+      <h2>Admission Corner</h2>
+
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div class="input">
+            <label for="first_name">First Name</label> <br />
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Enter First Name"
+              value="Tushar"
+            />
+          </div>
+
+          <div class="input">
+            <label for="middle_name">Middle Name</label> <br />
+            <input
+              type="text"
+              name="middle_name"
+              id="middle_name"
+              placeholder="Enter middle Name"
+            />
+          </div>
+
+          <div class="input">
+            <label for="last_name">Last Name</label> <br />
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Enter last Name"
+              disabled
+            />
+          </div>
+
+          <div class="input">
+            <label for="dob">DOB</label> <br />
+            <input type="date" name="dob" id="dob" placeholder="Enter DOB" />
+          </div>
+
+          <div class="radio">
+            <label>Gender</label> <br />
+
+            <label>
+              <input type="radio" name="gender" value="male" />
+              Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="female" checked />
+              Female
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="other" />
+              Transgender
+            </label>
+          </div>
+
+          <div class="input">
+            <label>Address</label> <br />
+            <!-- <input type="text" name="address" placeholder="Enter address here" /> -->
+            <textarea
+              rows="5"
+              name="address"
+              placeholder="Enter address here"
+            ></textarea>
+          </div>
+
+          <div class="checkbox">
+            <label>Hobbies</label>
+            <label
+              ><input type="checkbox" name="hobbies" value="playing cricket" />
+              playing cricket</label
+            >
+
+            <label
+              ><input type="checkbox" name="hobbies" value="playing cricket" />
+              playing cricket</label
+            >
+
+            <label
+              ><input type="checkbox" name="hobbies" value="playing cricket" />
+              playing cricket</label
+            >
+
+            <label
+              ><input type="checkbox" name="hobbies" value="Other" checked />
+              Other</label
+            >
+
+            <br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h4>&nbsp;&nbsp;&nbsp; Educational Details &nbsp;&nbsp;&nbsp;</h4>
+          </legend>
+
+          <table border="1px" cellspacing="0px" cellpadding="5px" width="100%">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Universisty/College</th>
+                <th>Marks Obtained</th>
+                <th>Total Marks</th>
+                <th>Passout Year</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <select name="">
+                    <option value="" disabled selected>Select Class</option>
+                    <option value="10">10th(SSC)</option>
+                    <option value="12">12th(HSC)</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="college_name"
+                    placeholder="Enter College/Universisty name"
+                    list="colleges"
+                  />
+
+                  <datalist id="colleges">
+                    <option value="MIT"></option>
+                    <option value="Deogiri"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                  </datalist>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="mark"
+                    placeholder="Enter Marks Obtained"
+                    max="600"
+                    min="100"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="mark"
+                    placeholder="Enter Total Marks"
+                    max="600"
+                    min="100"
+                  />
+                </td>
+
+                <td>
+                  <input type="month" name="month" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <select name="">
+                    <option value="" disabled selected>Select Class</option>
+                    <option value="10">10th(SSC)</option>
+                    <option value="12">12th(HSC)</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="college_name"
+                    placeholder="Enter College/Universisty name"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="mark"
+                    placeholder="Enter Marks Obtained"
+                    max="600"
+                    min="100"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="mark"
+                    placeholder="Enter Total Marks"
+                    max="600"
+                    min="100"
+                  />
+                </td>
+
+                <td>
+                  <input type="month" name="month" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Details</legend>
+          <div class="dropdown">
+            <label> Select Course</label><br />
+
+            <select name="course" id="course" multiple>
+              <optgroup label="Under Graduate Courses">
+                <option value="BCA">Bachelor of Computer Application</option>
+                <option>BCS</option>
+                <option>BBA</option>
+                <option>BA</option>
+                <option>BCom</option>
+              </optgroup>
+
+              <optgroup label="Post Graduate Courses">
+                <option>MCA</option>
+                <option>MCS</option>
+                <option>MBA</option>
+                <option>MA</option>
+                <option>MCom</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="dropdown">
+            <label> Select SEM</label><br />
+
+            <select name="course" id="course">
+              <option>I</option>
+              <option>II</option>
+              <option>III</option>
+              <option>IV</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Upload Documents</legend>
+
+          <table width="100%">
+            <tr>
+              <td>
+                <label for="photo">Upload Photo</label>
+                <input type="file" name="photo" id="photo" accept="image/*" />
+              </td>
+              <td>
+                <label for="sign">Upload Signature</label>
+                <input
+                  type="file"
+                  name="sign"
+                  id="sign"
+                  accept=".html,.css,.php"
+                />
+              </td>
+              <td>
+                <label for="docs">Upload DOcuments(Multiple)</label>
+                <input
+                  type="file"
+                  name="docs"
+                  id="docs"
+                  multiple
+                  accept="application/pdf"
+                />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        &nbsp;
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+      </form>
+    </div>
+  </body>
+</html>
