@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table CSS</title>
+  </head>
+  <body>
+    <h1>A Fancy Table</h1>
+
+    <style>
+      table {
+        border: 1px solid green;
+        width: 100%;
+
+        /*Below - Only aplies to table tag */
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      table tr td,
+      table tr th {
+        border: 1px solid green;
+        padding: 5px;
+        cursor: pointer;
+        /* vertical-align: top; */
+        /* vertical-align: bottom; */
+        height: 50px;
+
+        vertical-align: bottom;
+      }
+
+      table thead tr th {
+        background-color: green;
+        color: white;
+      }
+
+      table tbody tr:nth-child(odd) {
+        background-color: rgb(242, 239, 239);
+      }
+
+      table tbody tr:hover {
+        background-color: rgb(206, 203, 203);
+      }
+      table caption {
+        /* caption-side: top; */
+        caption-side: top;
+      }
+    </style>
+
+    <table>
+      <caption>
+        STudent Data
+      </caption>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>North/South</td>
+          <td>Simon Crowther</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Paris spécialités</td>
+          <td>Marie Bertrand</td>
+          <td>France</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
