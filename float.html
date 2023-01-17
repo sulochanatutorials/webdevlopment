@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+  </head>
+  <body>
+    <style>
+      #box {
+        height: 100px;
+        width: 100%;
+        border: 4px solid red;
+        text-align: center;
+        line-height: 30px;
+        padding-top: 20px;
+      }
+
+      #box button {
+        background-color: red;
+        line-height: 30px;
+        color: white;
+        font-family: fantasy;
+        border: none;
+        margin: 0px 20px 0px 20px; /*T R B L*/
+      }
+
+      #box .left {
+        float: left;
+      }
+      #box .right {
+        float: right;
+      }
+    </style>
+    <div id="box">
+      <button class="left">LEFT</button>
+      WELCOME
+      <button class="right">RIGHT</button>
+    </div>
+
+    <button>Outsise btn</button>
+  </body>
+</html>
