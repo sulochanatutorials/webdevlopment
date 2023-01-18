@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius</title>
+  </head>
+  <body>
+    <style>
+      .btn-group {
+        border: 1px solid red;
+        height: 50px;
+        margin-bottom: 20px;
+        line-height: 50px;
+        /* padding-top: 10px; */
+        text-align: center;
+      }
+      .btn-group .btn {
+        line-height: 30px;
+        /* height: 30px; */
+        cursor: pointer;
+        border: none;
+        padding: 0px 20px 0px 20px;
+        border-radius: 5px;
+        background-color: royalblue;
+        color: white;
+
+        font-weight: 100;
+        font-size: 15px;
+        display: inline-block;
+      }
+      .btn-group .btn:hover {
+        opacity: 0.7;
+      }
+    </style>
+    <div class="btn-group">
+      <b class="btn">Report Error</b>
+      <b class="btn">Spaces</b>
+      <b class="btn">Upgrade</b>
+      <b class="btn">News Letter</b>
+      <b class="btn">Get Certified</b>
+    </div>
+
+    <style>
+      .border {
+        border: 1px solid red;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      .rectangle {
+        width: 300px;
+        height: 150px;
+      }
+      .circle {
+        height: 250px;
+        width: 250px;
+        /* border-radius: 75px; */
+        border-radius: 50%;
+      }
+
+      .rounded {
+        border-radius: 10px;
+      }
+      .square {
+        height: 150px;
+        width: 150px;
+      }
+    </style>
+    <div>
+      <div class="rectangle border rounded"></div>
+
+      <div class="circle border"></div>
+
+      <div class="square border"></div>
+    </div>
+
+    <style>
+      .top-left-border {
+        height: 250px;
+        width: 500px;
+        border: 2px solid red;
+        margin: auto;
+
+        border-top-left-radius: 100px;
+
+        border-bottom-right-radius: 100px;
+        margin-bottom: 300px;
+      }
+    </style>
+    <div class="top-left-border"></div>
+  </body>
+</html>
