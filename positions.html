@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0px;
+      }
+      ul {
+        margin: 0px;
+        /* border: 2px solid red; */
+        background-color: green;
+        height: 40px;
+        border: 2px solid green;
+      }
+      ul li {
+        display: inline-block;
+        line-height: 40px;
+      }
+
+      ul li a {
+        color: white;
+        text-decoration: none;
+        /* border: 1px solid red; */
+        display: block;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      ul li a:hover {
+        background-color: darkgreen;
+      }
+
+      #header {
+        background-color: yellow;
+        position: fixed;
+        width: 100%;
+      }
+    </style>
+    <div id="header">
+      <h1>Shivchhatratapti Collegfe</h1>
+      <ul>
+        <li>
+          <a href="/home">Home</a>
+        </li>
+        <li>
+          <a href="/home">About College</a>
+        </li>
+        <li>
+          <a href="/home">Admission</a>
+        </li>
+        <li>
+          <a href="/home">Gallery</a>
+        </li>
+        <li>
+          <a href="/home">Our Teachers</a>
+        </li>
+        <li>
+          <a href="/home">Certifications</a>
+        </li>
+        <li>
+          <a href="/home">Copntact</a>
+        </li>
+      </ul>
+    </div>
+
+    <style>
+      #content {
+        background-color: red;
+        height: 800px;
+      }
+    </style>
+    <div id="content">
+      <img src="images/n1.jpg" alt="" width="100%" />
+      <img src="images/n2.jpg" alt="" width="100%" />
+
+      <style>
+        #social ol {
+          list-style: none;
+          /* border: 1px solid red; */
+          width: 50px;
+          position: fixed;
+
+          top: -20px;
+          /* left: -38px; */
+          right: 0px;
+          /* bottom: ; */
+        }
+        #social ol li {
+          /* border: 1px solid green; */
+        }
+
+        #social ol li a {
+          line-height: 50px;
+          display: block;
+          text-align: center;
+          color: white;
+          text-decoration: none;
+        }
+      </style>
+      <div id="social">
+        <ol>
+          <li>
+            <a href="facebook.com" style="background: #3b5998">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="linkedin.com" style="background: #007bb5">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="twitter.com" style="background: #55acee">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="youtube.com" style="background: #bb0000">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
