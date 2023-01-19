@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Position</title>
+  </head>
+  <body>
+    <style>
+      #outer,
+      #inner {
+        border: 1px solid red;
+        padding: 10px;
+      }
+
+      #outer {
+        width: 50%;
+        margin: auto;
+      }
+      #outer > p {
+        border: 1px solid green;
+      }
+      #inner {
+        /*postion:static*/
+        position: relative;
+        top: 0px;
+        left: 0px;
+        /* right: 0px;
+        bottom: 0px; */
+      }
+    </style>
+    <div id="outer">
+      <h1>Im inner div</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+        consequatur est mollitia id odio eveniet tenetur sed dolore totam
+        facilis. Id quo quaerat sit provident quibusdam molestias quod, odio
+        consequuntur?
+      </p>
+      <div id="inner">
+        <h1>I am Inner Div</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+          quasi delectus ratione vero vitae deserunt asperiores officiis
+          expedita nisi, fugit adipisci sunt consequuntur voluptatibus assumenda
+          maiores impedit quis aut? Quisquam!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
