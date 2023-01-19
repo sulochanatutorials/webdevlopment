@@ -1,73 +1,87 @@
-/**
- * Name Selector
- */
-h1{
-    color: brown;
-    text-align: right; /* left right center */
-    width: 100px;  /*50% */
-    height: 100px;
-    text-decoration: underline;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 
-p{
-    
+#navbar{
+    height: 40px;
+    border: rgb(186, 4, 4);
+    background-color: rgb(186, 4, 4);
+    line-height: 40px;
 }
 
-/**
- * ID Selector #
- */
-#title{
-    color: blueviolet;
+#navbar nav > ul > li{
+   display: inline-block;
 }
 
-/** Class Selector . */
-.text-italic{
-font-style: italic;
+#navbar nav > ul
+{
+    width: 90%;
+    margin: auto;
+}
+#navbar ul li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* color: white; */
+    /* border-top: 2px solid rgb(186, 4, 4); */
+}
+#navbar ul li a:hover{
+    /* border-top-color: rgb(239, 149, 3); */
+}
+#navbar ul ul{
+    display: none;
+    position: absolute;
+    width: auto;
+}
+#navbar ul li{
+    position: relative;
 }
 
-.text-underline{
-    text-decoration: underline;
+#navbar nav>ul  ul 
+{
+width: max-content;
 }
-
-p.text-italic{
-  font-weight: bold;  
+#navbar nav > ul >li:hover > div > ul
+{
+    display:block;
 }
-
-
-.text-italic.text-underline{
- color: rgba(203, 182, 21, 0.894);
-}
-
-.boys{
-
-}
-
-.girls{
-
+#navbar ul ul li a{
+    background-color: rgb(186, 4, 4);
+    border-top: 2px solid rgb(215, 67, 67);
 }
 
 
+#navbar > nav > ul > li > div > ul > li:hover > div > ul
+{
+    display: block;
+    left: 100%;
+    top: 0px;
+}
 
-.boys.girls{
+#navbar>nav>ul>li>div>ul>li:hover>a
+ {
+    color: rgb(186, 4, 4);
+    background-color: white;
+}
 
+#navbar>nav>ul>li>div>ul li:hover>a{
+    color: rgb(186, 4, 4);
+    background-color: white;
 }
 
 
-#header h2, #content h2{
-    font-size: 50px;
-}
-
-#content h2{
-    color: pink;
-}
-
-/**Grouping Selectory - using comma */
-
-#header h1, #content h2, #footer h3{
-    color: green;
-}
-
-.boys, .girls{
-
+#navbar> nav >ul> li> div >ul >li >div> ul> li:hover >div> ul{
+    display: block;
+    left: 100%;
+    top: 0px;
+    background-color: green;
 }
 
