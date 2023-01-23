@@ -1,0 +1,50 @@
+@media all{
+    * {
+         padding: 0px;
+        margin: 0px;
+    }
+}
+/**
+  - Screen device -Screen Size-  Width/Height
+  - Printer - Page Size A4,A6 
+ */
+@media print{
+    #test h1 {
+        background-color: yellow;
+    }
+}
+
+/**Mobile */
+@media screen and (min-width:0px) and (max-width:425px)  {
+    
+    #test h1 {
+            background-color: red;
+    }
+}
+
+
+/**Tablet */
+@media only screen and (min-width:426px) and (max-width:768px) {
+
+    #test h1 {
+        background-color: hotpink;
+    }
+}
+/**Laptop */
+@media only screen and (min-width:769px) and (max-width:1024px) {
+
+    #test h1 {
+        background-color: green;
+    }
+}
+
+
+/**Laptop */
+@media screen and (min-width:1025px) {
+
+    #test h1 {
+        background-color: skyblue;
+    }
+}
+
+

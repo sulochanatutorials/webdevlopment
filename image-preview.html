@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Preview</title>
+  </head>
+  <body>
+    <style>
+      article .image-holder {
+        width: 100px;
+        float: left;
+        margin-right: 20px;
+        position: relative;
+      }
+
+      article .image-holder > img {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .image-preview {
+        width: 300px;
+        border: 1px solid rgb(242, 240, 240);
+        position: absolute;
+        left: 105%;
+        top: 0px;
+        background-color: white;
+        text-align: center;
+
+        display: none;
+      }
+      .image-preview img {
+        width: 100%;
+      }
+      .image-preview h4 {
+        margin: 0px;
+        line-height: 40px;
+      }
+      .image-holder:hover .image-preview {
+        display: block;
+      }
+    </style>
+    <article>
+      <h1>Image Preview</h1>
+      <div>
+        <div class="image-holder">
+          <img src="images/n1.jpg" alt="" />
+
+          <div class="image-preview">
+            <img src="images/n1.jpg" alt="" />
+            <h4>My Nature Image</h4>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio
+          fugiat neque soluta voluptas esse veniam totam nihil fuga laboriosam.
+          Debitis atque quam ducimus amet facilis ipsa explicabo numquam
+          delectus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio
+          fugiat neque soluta voluptas esse veniam totam nihil fuga laboriosam.
+          Debitis atque quam ducimus amet facilis ipsa explicabo numquam
+          delectus.
+        </p>
+      </div>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+  </head>
+  <body>
+    <style>
+      .dropdown {
+        /* border: 1px solid red; */
+        position: relative;
+      }
+      .dropdown-container {
+        width: 200px;
+      }
+
+      .dropdown .dropdown-title {
+        background-color: green;
+        line-height: 40px;
+        /* height: 50px; */
+
+        text-align: center;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        display: block;
+      }
+
+      .dropdown .dropdown-title:hover {
+        background-color: rgb(110, 169, 110);
+      }
+
+      .dropdown .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 25px;
+      }
+
+      .dropdown-container:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown .dropdown-content ul {
+        /* border: 1px solid red; */
+        width: 200px;
+        padding: 0px;
+        /* display: none; */
+      }
+
+      .dropdown .dropdown-content ul li {
+        list-style: none;
+        line-height: 30px;
+        padding-left: 10px;
+        cursor: pointer;
+
+        /* border-bottom: 1px solid gray; */
+      }
+      .dropdown .dropdown-content ul li:hover {
+        background-color: gray !important;
+        color: white;
+      }
+      .dropdown .dropdown-content ul li:nth-child(even) {
+        background-color: lightgray;
+      }
+    </style>
+    <div>
+      <div class="dropdown">
+        <div class="dropdown-container">
+          <span class="dropdown-title">Dropdown Menu</span>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="http://google.com" target="_blank">Home</a></li>
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
