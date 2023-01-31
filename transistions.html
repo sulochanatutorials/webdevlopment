@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaistion in CSS</title>
+  </head>
+  <body>
+    <style>
+      #box {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        color: white;
+        background-color: blueviolet;
+        background-image: linear-gradient(white, blueviolet, green);
+        float: right;
+
+        transition: all 1s ease-in-out 0s;
+        /**property duration function delay **/
+        transition-property: all;
+        transition-delay: 0s;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out; /**/
+      }
+
+      #box:hover {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+      }
+    </style>
+    <div id="box">Welcome</div>
+  </body>
+</html>
