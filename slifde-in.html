@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <span class="center">WELCOME</span>
+      </div>
+    </div>
+
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        margin: auto;
+
+        background-image: url("https://www.w3schools.com/css/pineapple.jpg");
+      }
+
+      span {
+        display: inline-block;
+        position: absolute;
+        /* color: white; */
+        /* background-color: white; */
+        color: white;
+      }
+
+      .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        transition: visibility 0.5s ease-in;
+      }
+
+      .container {
+        background-color: rgba(35, 115, 213, 0.8);
+        position: relative;
+        line-height: 30px;
+        width: 100%;
+        height: 0px;
+        transition: height 0.5s ease-in;
+      }
+
+      .box:hover .container {
+        height: 300px;
+      }
+      .box:hover .center {
+        visibility: visible;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <span class="top-left">TOP LEFT</span>
+      <span class="top-right">TOP RIGHT</span>
+      <span class="bottom-left">BOTTOM LEFT</span>
+      <span class="bottom-right">BOTTOM RIGHT</span>
+      <span class="center">CENTER</span>
+
+      <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="" />
+    </div>
+
+    <style>
+      .box {
+        width: 500px;
+        background-color: red;
+        height: 300px;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+      }
+      .box img {
+        width: 100%;
+        opacity: 0.5;
+      }
+      span {
+        display: inline-block;
+        position: absolute;
+        /* color: white; */
+        background-color: white;
+      }
+      .top-left {
+        top: 0px;
+        left: 0px;
+      }
+
+      .top-right {
+        top: 0px;
+        right: 0px;
+      }
+
+      .bottom-right {
+        bottom: 0px;
+        right: 0px;
+      }
+
+      .bottom-left {
+        bottom: 0px;
+        left: 0px;
+      }
+      .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </body>
+</html>
