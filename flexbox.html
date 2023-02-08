@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLex BOx</title>
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .box-container {
+        background-color: aqua;
+        height: auto;
+        /* padding-top: 5px; */
+        display: flex;
+        /*  flex-direction: row; 
+        flex-wrap: wrap;*/
+
+        flex-flow: row wrap;
+
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .box {
+        height: 80px;
+        line-height: 80px;
+        width: 160px;
+        border: 1px solid red;
+        margin: 5px;
+        /* display: inline-block; */
+        /* float: left; */
+        text-align: center;
+      }
+
+      /* .box:first-child{
+
+      }
+
+      .box:last-child{
+
+      } */
+
+      .box:nth-child(odd) {
+        height: 180px;
+      }
+    </style>
+  </body>
+</html>

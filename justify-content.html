@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify Content</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        transition: all 3s ease-in;
+        background-color: red;
+        padding: 10px;
+        justify-content: baseline;
+        align-items: center;
+        height: 600px;
+        /* align-content: center; */
+      }
+      .container:hover {
+        /* justify-content: flex-end; */
+      }
+      .container .box {
+        width: 25%;
+        height: 200px;
+        background-color: blueviolet;
+        text-align: center;
+
+        border: 2px solid white;
+        font-size: 85px;
+        color: white;
+        /* box-sizing: border-box; */
+      }
+    </style>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box" style="font-size: 30px">2</div>
+      <div class="box" style="font-size: 10px">3</div>
+      <div class="box">4</div>
+      <div class="box" style="font-size: 30px">5</div>
+      <div class="box">6</div>
+      <div class="box" style="font-size: 30px">7</div>
+      <div class="box">8</div>
+    </div>
+  </body>
+</html>
