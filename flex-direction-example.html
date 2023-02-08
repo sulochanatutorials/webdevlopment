@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLex Direction Use</title>
+  </head>
+  <body>
+    <style>
+      .about-section {
+        display: flex;
+        align-items: center;
+        background-color: aqua;
+        flex-direction: row;
+      }
+      img {
+        margin: 20px;
+      }
+      .about-text {
+        padding: 30px;
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 676px) {
+        .about-section {
+          flex-direction: column-reverse;
+        }
+        img {
+          margin-bottom: 0px;
+        }
+        .about-text {
+          padding-top: 0px;
+        }
+      }
+    </style>
+    <div class="about-section">
+      <div class="image-holder">
+        <img src="images/n1.jpg" alt="" width="90%" />
+      </div>
+
+      <div class="about-text">
+        <h3>About Our COllege</h3>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa facere
+          culpa omnis incidunt voluptatem non maxime earum minus nostrum
+          veritatis. Nobis iste perspiciatis placeat sit, molestiae corrupti
+          mollitia nisi eius.
+        </p>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa facere
+          culpa omnis incidunt voluptatem non maxime earum minus nostrum
+          veritatis. Nobis iste perspiciatis placeat sit, molestiae corrupti
+          mollitia nisi eius.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
