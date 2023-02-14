@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Exmple</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: auto auto auto; */
+        gap: 10px;
+
+        grid-template-areas:
+          "header header header header header header"
+          "menu content content content right right"
+          "menu footer footer footer footer footer";
+      }
+      .container div {
+        background-color: blueviolet;
+        color: white;
+        min-height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .red {
+        background-color: brown;
+      }
+      .b2 {
+        grid-area: myArea;
+      }
+    </style>
+    <div class="container">
+      <div style="grid-area: header">Heder</div>
+      <div style="grid-area: menu">Menu</div>
+      <div style="grid-area: content">content</div>
+      <div style="grid-area: right">right</div>
+      <div style="grid-area: footer">footer</div>
+    </div>
+  </body>
+</html>
